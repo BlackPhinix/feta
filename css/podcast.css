@@ -1,0 +1,106 @@
+*{
+margin:0; padding:0;
+box-sizing:border-box
+}
+
+.p{
+    color: aliceblue;
+    font-size:15px;
+    text-align: right;
+    padding-left: 1rem;
+
+}
+
+.titles{
+ color:rgb(14, 16, 19);
+ font-size: medium;
+ padding-top: 7rem;
+}
+
+.container{
+    background: rgb(227, 235, 255);
+}
+
+.container .title{
+    font-size: 3rem;
+    padding:2rem 0;
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+  text-decoration: underline;
+    color:rgb(34, 32, 32);
+    padding-bottom: 10rem;
+}
+
+.container .podcast-container{
+    display: flex;
+    align-items: center;
+    flex-flow: column;
+    padding-bottom: 10rem;
+}
+
+.container .podcast-container .box{
+     height: 16rem;
+     width: 80%;
+     display: flex;
+     align-items: center;
+     background: #ffffff;
+     border-radius: 1rem;
+     box-shadow: 0 .5rem 1rem #161616;
+     overflow:hidden;
+     margin: 2rem;
+     
+     
+}
+
+.container .podcast-container .box .image{
+    height: 100%;
+    width: 25%;
+}
+
+.container .podcast-container .box .image img{
+    height: 100%;
+    width: 100%;
+    object-fit:cover;
+}
+
+.container .podcast-container .box .podcast{
+    width: 75%;
+}
+
+.container .podcast-container .box .podcast audio{
+    width: 100%;
+    outline: none;
+}
+
+.container .podcast-container .box .podcast audio::-webkit-media-controls-eclosure{
+    background: none;
+}
+
+
+
+
+
+@media (max-width:500px){
+    .container .podcast-container .box{
+        height:25rem;
+        width:90%;
+        flex-flow: column;
+    }
+
+    .container .podcast-container .box .image{
+        height:80;
+        width:100%;
+    }
+
+    .container .podcast-container .box .podcast{
+        height:20;
+        width:100%;
+    }
+
+    .container .podcast-container{
+        display: flex;
+        align-items: center;
+        flex-flow: column;
+        margin: 13rem;
+    }
+}
